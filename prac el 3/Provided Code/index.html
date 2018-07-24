@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+	<meta name="viewport" content="user-scalable=YES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+</head>
+<body>
+<div class="wrap">
+
+
+    <div id="header" class= "col-d-12 col-l-12 col-12">
+        <img src="banner_full.png" alt="Lancaster university banner with logo">
+    </div>
+
+    <div id="menu-bar" class="col-d-12 col-l-12 col-12" alt="Navigation bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <div id="campus" class="col-d-12 col-l-12 col-12 content" role="main">
+        <h1>University Campus</h1>
+        <img src="aerial.png" alt="Aerial photograph of lancaster University" class="middle" style="margain:auto;"><br>
+        Located on a beautiful campus in the North West of England, the University places great emphasis on a strong student experience and employability. The University gives students access to academics who 
+		are experts in their field. Lancaster is one of only a handful of universities with a collegiate system which has helped to forge a strong sense of identity and loyalty, and continues to be a distinctive feature of student life
+		at Lancaster. 
+		Students from one hundred countries make up a thriving community based around our nine colleges, creating a culturally diverse campus in a location that boasts the combination of city, coast and countryside.
+        <a href="#">Read More</a>
+    </div>
+
+    <div id="facts" class="content1 col-d-6 col-l-6 col-12">
+        <h2>Facts and Figures</h2>
+        Students at Lancaster University are among the most satisfied in the UK according to the 2015 National Student Survey, in which the University achieved 91% on the overall satisfaction score, placing it firmly amongst the top 10 UK universities.
+        Summer 2011 saw the opening of our brand new £20m Sports Centre, ranked sixth in the THE Student Experience Survey 2015.
+        97% of Lancaster University graduates have gone into work or further study within six months of graduating.
+        As one of the few collegiate universities in the UK we welcome each student to one of our colleges on campus. In addition to our eight undergraduate colleges, we have one dedicated to our postgraduate students.
+        <a href="#">Read More</a>
+    </div>
+    
+    <div id="news" class="content1 col-d-6 col-l-6 col-12">
+        <h2>News</h2>
+		<div tabindex="-1"></div>
+        <h3>Lancaster Academics to unlock patient information to create a healthier North West</h3>
+        Lancaster University academics are coming together on a ground-breaking £20m initiative. By using data and technology in revolutionary ways to improve patient care and ultimately save lives in the North of England.
+        <a href="#">Read More</a>
+    </div>
+        
+    <div id="apply" class="content col-d-6 col-l-6 col-12">
+        <h2>Study</h2>
+        <p><h4>Apply for a Degree at Lancaster Below: </h4></p>
+        <form>
+            <label for="Firstname" >First name:</label><br>
+            <input type="text" name="firstname" placeholder="E.g Joe" required ><br>
+			
+            <label for="Lastname" >Last name:</label><br>
+            <input type="text" name="lastname" placeholder="E.g Bloggs" required><br>
+			
+            <label for="DoB">Date of Birth:</label><br>
+            <input type="date" name="dob" min="1920-12-31" max="2001-12-31" required><br>
+            
+			<label for="Degree">Degree:</label><br>
+           <select type="text" name="Degree Option" required>
+				<option disabled selected value>Choose here</option>
+				<option value="CompSci">Computer Science</option>
+				<option value="Mathematics">Mathematics</option>
+				<option value="Physics">Physics</option>
+				<option value="Biomedicine">Biomedicine</option>
+			</select><br>
+            <button>Submit</button>
+		</form>
+    </div>
+
+    <div id="contact-us" class="content col-d-6 col-l-6 col-12">
+        <form>
+		<h2>Contact Us</h2>
+            <label for="name">First name:</label><br>
+            <input type="text name="firstname" placeholder="E.g Joe" required><br>
+			
+            <label for="surname">Last name:</label><br>
+            <input type="text name="lastname" placeholder="E.g Bloggs" required><br>
+			
+			<label for="Message">Message</label><br>
+            <textarea rows="6" cols="80" placeholder="Enter Message:" required></textarea><br>
+            <button>Submit</button>
+			
+
+        </form>
+    </div>
+    
+</div>
+
+	
+ 
+<!--  <script>
+	
+	var newFontSize = 100;
+$(document).ready(function(){
+  $(".resetFont").click(function(){
+    newFontSize = 100;
+    var allElems = $('*');
+    for(var counter = 0; counter < allElems.length; counter++) {
+        $(allElems[counter]).css('font-size', '100%');
+    }
+  });
+
+  // Increase Font Size
+  $(".increaseFont").click(function(){
+    newFontSize = newFontSize*1.2;
+    var allElems = $('*');
+    for(var counter = 0; counter < allElems.length; counter++) {
+        $(allElems[counter]).css('font-size', newFontSize + '%');
+    }
+    return false;
+  });
+});
+ </script> -->
+ 
+ </div class="wrap">
+</body>
+</html>

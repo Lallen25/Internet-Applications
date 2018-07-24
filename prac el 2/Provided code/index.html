@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+<div class="wrap">
+	<div class="col-d-10 col-l-9 show hidden" style="border: none;">
+		<img src="banner.png" alt="Lancaster university banner" class="banner" />
+	</div>
+
+	<div class="col-d-2 col-l-3 col-2 " style="border: none;">
+		
+			<img src="icon.png" alt="Lancaster university banner" class="middle" >
+			
+	</div>
+
+	<div class="col-d-12 col-l-12 col-10" style="border: none;">
+	<hr>
+		<ul class="limheight">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">People</a></li>
+			<li><a href="#">Courses</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	<hr>	
+	</div>
+
+	
+	<div class="col-d-5 col-l-6 col-12 content" >
+		<button class="accordion">University Campus</button>
+		<div class="panel">
+		
+		<h1>University Campus</h1><hr>
+		<img src="aerial.png" alt="Aerial photo of Lancaster university" class="aerial">
+		<p>located on a beautiful campus in the North West of England, the University places great emphasis on a
+			strong student experience and employability and gives students access to academics who are experts in
+			their field. Lancaster is one of only a handful of universities with a collegiate system which has
+			helped to forge a strong sense of identity and loyalty, and continues to be a distinctive feature
+			of student life at Lancaster. Students from one hundred countries make up a thriving community based
+			around our nine colleges, creating a culturally diverse campus in a location that boasts the
+			combination of city, coast and countryside.</p>
+			</div>
+		</div>
+	
+
+	<div class="col-d-5 col-l-6 col-12 content">
+		<button class="accordion">Facts and Figures</button>
+		<div class="panel">
+		
+		<h1>Facts and Figures</h1>
+		<hr>
+		<p>Students at Lancaster University are among the most satisfied in the UK according to the 2015 National
+			Student Survey, in which the University achieved 91% on the overall satisfaction score, placing
+			it firmly amongst the top 10 UK universities.</p>
+
+		<p>Summer 2011 saw the opening of our brand new &pound;20m Sports Centre, ranked sixth in the Student
+			Experience Survey 2015.</p>
+
+		<p>97% of Lancaster University graduates have gone into work or further study within six months
+			of graduating.</p>
+		<p>As one of the few collegiate universities in the UK we welcome each student to one of our colleges
+			on campus. In addition to our eight undergraduate colleges, we have one dedicated to our postgraduate
+			students.</p>
+			</div>
+		</div>
+			
+
+
+	<div class="col-d-2 col-l-12 col-12 content">
+		<button class="accordion">News</button>
+		<div class="panel">
+			
+		<h1>News</h1> <hr>
+		<p>Lancaster Academics to unlock patient information to create a healthier North West
+			Academics from across Lancaster University are coming together on a ground-breaking &pound;20m initiative
+			using data and technology in revolutionary ways to improve patient care and ultimately save lives in
+			the North of England.</p>
+	</div>
+	</div>
+	
+</div>
+
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight){
+		  panel.style.maxHeight = null;
+		} else {
+		  panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	  });
+	}
+</script>
+
+
+</body>
+</html>
